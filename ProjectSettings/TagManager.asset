@@ -9,6 +9,10 @@ TagManager:
   - Flame
   - Water
   - Destroyer
+  - Green
+  - Red
+  - Blue
+  - Yellow
   layers:
   - Default
   - TransparentFX
@@ -18,12 +22,12 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Red
+  - Green
+  - Blue
+  - Yellow
+  - ProjectileLayer
+  - Interactable
   - 
   - 
   - 

@@ -10,7 +10,13 @@ public class EnemyMovement : MonoBehaviour
 
     void Update()
     {
-        if (waypoints.Length == 0) return;
+        if (waypoints == null || waypoints.Length == 0) return;
+
+        if (currentWaypointIndex >= waypoints.Length) 
+        {
+            // Ya llegó al final, no hacer nada más
+            return;
+        }
 
         Transform target = waypoints[currentWaypointIndex];
         transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
@@ -18,9 +24,6 @@ public class EnemyMovement : MonoBehaviour
         if (Vector3.Distance(transform.position, target.position) < 0.1f)
         {
             currentWaypointIndex++;
-            if (currentWaypointIndex >= waypoints.Length)
-                currentWaypointIndex = waypoints.Length - 1; // O detener movimiento
         }
     }
 }
-

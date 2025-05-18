@@ -646,11 +646,11 @@ GameObject:
   - component: {fileID: 1976252810982553627}
   - component: {fileID: 7096493037449093117}
   - component: {fileID: 7731032603534992355}
-  - component: {fileID: -3556729406086415946}
   - component: {fileID: -2401679199108731631}
+  - component: {fileID: -4135575614523078846}
   m_Layer: 0
   m_Name: Eusataquio
-  m_TagString: Untagged
+  m_TagString: Green
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -742,15 +742,27 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.99
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-3556729406086415946
+  m_Center: {x: -0.05, y: 0.07, z: 0.01}
+--- !u!114 &-2401679199108731631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3921681638249083385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a0c2df9f4951f4418e0095d6913668b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-4135575614523078846
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -767,18 +779,6 @@ MonoBehaviour:
   - {fileID: 353977092619391932, guid: 6a2c6ca5f0ef0754886955c444eddb36, type: 3}
   - {fileID: 2852468153092779065, guid: 61e338e2ff5ee894d8b8987afae4b865, type: 3}
   speed: 2
---- !u!114 &-2401679199108731631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3921681638249083385}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a0c2df9f4951f4418e0095d6913668b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6388317486939274070
 GameObject:
   m_ObjectHideFlags: 0
